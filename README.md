@@ -1,3 +1,23 @@
+
+162. Full Join characters on more_info
+mario_database=> SELECT * FROM characters FULL JOIN more_info ON characters.character_id = more_info.character_id;
+                                                                   
++--------------+--------+------------------+----------------+--------------+------------+--------------+--------------+--------------+
+| character_id |  name  |     homeland     | favorite_color | more_info_id |  birthday  | height_in_cm | weight_in_kg | character_id |
++--------------+--------+------------------+----------------+--------------+------------+--------------+--------------+--------------+
+|            1 | Mario  | Mushroom Kingdom | Red            |            2 | 1981-07-09 |          155 |         64.5 |            1 |
+|            2 | Luigi  | Mushroom Kingdom | Green          |            3 | 1983-07-14 |          175 |         48.8 |            2 |
+|            3 | Peach  | Mushroom Kingdom | Pink           |            4 | 1985-10-18 |          173 |         52.2 |            3 |
+|            4 | Toad   | Mushroom Kingdom | Blue           |            5 | 1950-01-10 |           66 |         35.6 |            4 |
+|            5 | Bowser | Koopa Kingdom    | Yellow         |            6 | 1990-10-29 |          258 |        300.0 |            5 |
+|            6 | Daisy  | Sarasaland       | Orange         |            7 | 1989-07-31 |              |              |            6 |
+|            7 | Yoshi  | Dinosaur Land    | Green          |            8 | 1990-04-13 |          162 |         59.1 |            7 |
++--------------+--------+------------------+----------------+--------------+------------+--------------+--------------+--------------+
+(7 rows)
+
+__
+
+
 163. Full Join characters on sounds
 mario_database=> SELECT * FROM characters FULL JOIN sounds ON characters.characte
 r_id = sounds.character_id;
